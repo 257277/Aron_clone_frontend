@@ -97,8 +97,8 @@
             assistance.</p>
     </footer>
     <script>
-        let baseurl = "http://localhost:4500/menu/"
-        let url = "http://localhost:4500/menu/?page=1&limit=1"
+        let baseurl = "https://puce-wild-coati.cyclic.app/menu/"
+        let url = "https://puce-wild-coati.cyclic.app/menu/?page=1&limit=1"
 
 
         async function myfun() {
@@ -126,7 +126,7 @@
             for (let i = 1; i <= button; i++) {
                 let b = document.createElement("button");
                 b.innerText = i;
-                let url1 = `http://localhost:4500/menu/?page=${i}&limit=1`
+                let url1 = `https://puce-wild-coati.cyclic.app/menu/?page=${i}&limit=1`
                 b.addEventListener("click", async () => {
 
                     document.querySelector(".msnd").innerText = "";

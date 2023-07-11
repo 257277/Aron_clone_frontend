@@ -98,7 +98,7 @@
         console.log(obj);
         sgn(obj);
     })
-    let url = "http://localhost:4500/user/register"
+    let url = "https://puce-wild-coati.cyclic.app/user/register"
     let sgn = async (obj) => {
 
         let res = await fetch(url, {
@@ -108,7 +108,7 @@
                 "Content-Type": "application/json"
             }
         }).then(res => res.json())
-            .then(res => alert(res))
+            .then(res => alert(res.message))
             .catch(err => alert(err))
     }
 
